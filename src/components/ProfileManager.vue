@@ -1,7 +1,7 @@
 <template>
   <section>
 
-    <h1>Who's watching?</h1>
+    <h1 class="title">Who's watching?</h1>
     <div class="container">
         <div class="profiles">
       <router-link to="/home" v-for="profile in profiles" :key="profile.id" class="item">
@@ -16,7 +16,7 @@
     
     </div>
     <div class="buttondiv">
-    <button>Manage Profiles</button>
+    <button class="manage">MANAGE PROFILES</button>
     </div>
   </section>
 </template>
@@ -27,7 +27,7 @@ export default {
       profiles: [
         {
           id: 1,
-          name: "Pengu",
+          name: "Berry",
           image:
             "https://i.pinimg.com/originals/34/62/d2/3462d27440aa255b1c314ff16f4032b4.png",
         },
@@ -121,7 +121,7 @@ align-items: center;
 button{
 width: fit-content;
 height: fit-content;
-border: 1px solid #7f7f7f;
+border: 2px solid #7f7f7f;
 background: transparent;
 color: #7f7f7f;
 padding: .6rem 2rem;
@@ -134,5 +134,19 @@ display: flex;
 flex-direction: column;
 align-items: center;
 color: #7f7f7f;
+}
+.name{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.title{
+  font-size: 4rem;
+  font-weight: 600;
+}
+.manage{
+  padding: 0.6rem 1.4rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
 }
 </style>

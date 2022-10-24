@@ -11,7 +11,7 @@
     <li>Browse by Languages</li>
    </ul>
    </div>
-   <img src="https://i.imgur.com/fXJosY6.jpg" alt="" id="profile">
+  <router-link to="/"><img src="https://i.imgur.com/fXJosY6.jpg" alt="" id="profile"></router-link> 
     </nav>
 </template>
 <script>
